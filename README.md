@@ -11,21 +11,21 @@ Here’s a sneak peek at the user interface of the application:
 ### 1. 🔑 **Login Screen**
 This is the screen where you can log in to your account.
 
-![Login UI](screenshots/login_UI.png)
+![Login UI](screenshot/login_UI.png)
 
 ---
 
 ### 2. 📝 **Registration Screen**
 If you're a new user, you can register by entering your details here.
 
-![Register UI](screenshots/Register_UI.png)
+![Register UI](screenshot/Register_UI.png)
 
 ---
 
 ### 3. 🗂️ **Main Dashboard**
 Once logged in, this is the main interface where you can view, add, edit, and delete your saved passwords.
 
-![Main UI](screenshots/Main_UI.png)
+![Main UI](screenshot/Main_UI.png)
 
 ---
 
