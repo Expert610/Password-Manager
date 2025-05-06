@@ -93,7 +93,7 @@ namespace Password_Manager
 
 
                 // Save the password logic here
-                string conn = @"Data Source=DESKTOP-L56IBDC\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;Trust Server Certificate = True";
+                string conn = @"Data Source=DESKTOP-abc\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;Trust Server Certificate = True";
                 string Website = txtwebsite.Text;
                 string Username = txtusername.Text;
                 string Passwords = txtpassword.Text;
@@ -118,7 +118,7 @@ namespace Password_Manager
                     }
                 }
             }
-            //Data Source = DESKTOP - L56IBDC\SQLEXPRESS; Initial Catalog = User_Database; Integrated Security = True; Encrypt = True; Trust Server Certificate = True
+            //Data Source = DESKTOP - abc\SQLEXPRESS; Initial Catalog = User_Database; Integrated Security = True; Encrypt = True; Trust Server Certificate = True
 
 
 
@@ -156,7 +156,7 @@ namespace Password_Manager
         {
             lv.Items.Clear();
 
-            string conn = @"Data Source=DESKTOP-L56IBDC\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
+            string conn = @"Data Source=DESKTOP-abc\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
             string query = "SELECT  id_no,Website FROM Passwords WHERE id = @UserId";
 
             using (SqlConnection con = new SqlConnection(conn))
@@ -187,7 +187,7 @@ namespace Password_Manager
                 ListViewItem selectedItem = lv.SelectedItems[0];
                  selectedRecordId = Convert.ToInt32(selectedItem.Tag);
 
-                string conn = @"Data Source=DESKTOP-L56IBDC\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
+                string conn = @"Data Source=DESKTOP-abc\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
                 string query = "SELECT Website, Username, Passwords, note FROM Passwords WHERE id_no = @Id";
 
                 using (SqlConnection con = new SqlConnection(conn))
@@ -223,7 +223,7 @@ namespace Password_Manager
                     ListViewItem selectedItem = lv.SelectedItems[0];
                     int selectedRecordId = Convert.ToInt32(selectedItem.Tag);
 
-                    string conn = @"Data Source=DESKTOP-L56IBDC\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
+                    string conn = @"Data Source=DESKTOP-abc\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
                     string query = "DELETE FROM Passwords WHERE id_no = @Id";
 
                     using (SqlConnection con = new SqlConnection(conn))
@@ -257,7 +257,7 @@ namespace Password_Manager
                 return;
             }
 
-            string conn = @"Data Source=DESKTOP-L56IBDC\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
+            string conn = @"Data Source=DESKTOP-abc\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;TrustServerCertificate=True";
             string query = "UPDATE Passwords SET Website=@Website, Username=@Username, Passwords=@Passwords, note=@note WHERE id_no=@Id";
 
             using (SqlConnection con = new SqlConnection(conn))
