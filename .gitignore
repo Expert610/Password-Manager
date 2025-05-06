@@ -1,0 +1,23 @@
+# Ignore build results
+bin/
+obj/
+
+# Ignore VS folders and settings
+.vs/
+*.user
+*.suo
+
+# Ignore executable files
+*.exe
+*.dll
+*.pdb
+
+# Ignore local SQL Server files
+*.mdf
+*.ldf
+
+# Ignore database backups
+*.bak
+
+# Others
+*.log
