@@ -43,7 +43,7 @@ namespace Password_Manager
             else
             {
 
-                string constring = @"Data Source=DESKTOP-L56IBDC\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;Trust Server Certificate=True";
+                string constring = @"Data Source=DESKTOP-abc\SQLEXPRESS;Initial Catalog=User_Database;Integrated Security=True;Trust Server Certificate=True";
                 SqlConnection con = new SqlConnection(constring);
 
                 string query = "SELECT id FROM Registration_form WHERE username = '" + txtusername.Text + "' AND password = '" + txtpassword.Text + "'";
