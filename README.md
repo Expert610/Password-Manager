@@ -57,5 +57,5 @@ Follow these steps to get the Password Manager running on your machine:
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/password-manager.git
+git clone https://github.com/Expert610/password-manager.git
 
